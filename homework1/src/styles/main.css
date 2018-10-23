@@ -2,20 +2,6 @@ body {
     margin: 0;
 }
 
-/*.header, .main {
-    width: 1060px;
-    margin-top: 0;
-    margin-left: 70px;
-    margin-right: auto;
-}*/
-
-/*.header-cover-image {
-    margin: 0;
-    width: 1060px;
-    height: 675px;
-    margin-top: -36px;
-}*/
-
 .header {
     margin: 0;
     width: 1060px;
@@ -23,16 +9,12 @@ body {
     background-image: url("../images/cover.png");
 
     width: 1060px;
-    margin-top: 0;
-    margin-left: 70px;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 .main {
     width: 1060px;
-    margin-top: 0;
-    margin-left: 70px;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 .header-title {
@@ -49,20 +31,19 @@ body {
     display: inline-block;
     list-style: none;
     text-transform: uppercase;
-    margin: 0 0 0 240px;
+    margin: 0 0 0 210px;
+    padding: 0;
 }
 
 .header-link-item {
     display: inline;
-    margin-left: 70px;
+    margin-left: 100px;
 }
 
 .header-link-title {
-    font-family: ArialMT;
+    font-family: ArialMT serif;
     font-size: 14px;
 }
-
-/**/
 
 .main-post, .sidebar {
     display: inline-block;
@@ -99,8 +80,9 @@ body {
 }
 
 .main-post-image {
-    width: 650px;
-    height: 490px;
+    width: 660px;
+    height: auto;
+    overflow: hidden;
 }
 
 .sidebar {
@@ -154,19 +136,21 @@ body {
 }
 
 .footer {
+    margin-top: 245px;
     height: 100px;
     background-color: #f0f0f0;
 }
 
 .footer-menu {
+    padding: 0;
+    margin-top: 45px;
+    margin-left: 254px;
     display: inline-block;
     list-style: none;
-    margin-top: 45px;
-    margin-left: 100px;
 }
 
 .footer-menu-item {
+    margin-left: 10px;
     display: inline-block;
     font-size: 14px;
-    margin-left: 10px;
 }
