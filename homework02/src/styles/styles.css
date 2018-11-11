@@ -36,6 +36,40 @@ body {
     font-size: 16px;
     text-transform: uppercase;
     color: #333333;
+    position: relative;
+}
+
+.header-menu-item:active {
+    color: #5c6bc0;
+}
+
+.header-menu-item::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    right: 0;
+    width: 0;
+    height: 3px;
+    background-color: #5c6bc0;
+    transition: width 0.3s ease-in-out;
+}
+
+.header-menu-item:hover::after {
+    width: 100%;
+}
+
+.header-menu-item:last-child:hover::after {
+    width: 0;
+}
+
+.search-button {
+    width: 16px;
+    height: 17px;
+    background-image: url("../images/search/search_header.svg");
+}
+
+.search-button:hover {
+    background-image: url("../images/search/hover.svg");
 }
 
 .feed {
