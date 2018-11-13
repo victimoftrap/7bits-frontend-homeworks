@@ -58,9 +58,9 @@ body {
     width: 100%;
 }
 
-.header-menu-item:last-child:hover::after {
-    width: 0;
-}
+/*.header-menu-item:last-child:hover::after {*/
+    /*width: 0;*/
+/*}*/
 
 .header-search-button {
     width: 16px;
