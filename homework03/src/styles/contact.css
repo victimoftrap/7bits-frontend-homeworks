@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    background-color: #f7f9fc;
+    font-family: 'Lato', sans-serif;
+}
+
+.contact-us {
+    margin: 0 auto;
+    width: 952px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.contact-us__content {
+    margin: 0 auto;
+    width: 756px;
+    padding-top: 80px;
+}
+
+.contact-us__title {
+    margin: 0;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.contact-us__message {
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 96px;
+    font-size: 17px;
+    color: #333333;
+}
+
+.contact-us__message::after {
+    content: '';
+    width: 756px;
+    margin-top: 66px;
+    border-top: 2px solid #eeeeee;
+    left: 335px;
+    position: absolute;
+}
+
+.text-input__window {
+    width: 364px;
+    height: 56px;
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #f7f9fb;
+}
