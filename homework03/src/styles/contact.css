@@ -14,6 +14,7 @@ body {
     margin: 0 auto;
     width: 756px;
     padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .contact-us__title {
@@ -33,18 +34,29 @@ body {
 .contact-us__message::after {
     content: '';
     width: 756px;
-    margin-top: 66px;
+    margin-top: 48px;
     border-top: 2px solid #eeeeee;
-    left: 335px;
-    position: absolute;
+    float: left;
 }
 
 .text-input__window {
-    width: 364px;
+    width: 304px;
     height: 56px;
-    border-style: solid;
-    border-width: 1px;
+    border: 1px solid #f7f9fc;
     padding-left: 30px;
     padding-right: 30px;
-    color: #f7f9fb;
+    /*background-color: #f7f9fc;*/
+    background-color: #4a569a;
+    color: #333333;
+}
+
+#subject {
+    width: 304px;
+    height: 56px;
+    border: 1px solid #f7f9fc;
+    padding-left: 30px;
+    padding-right: 30px;
+    /*background-color: #f7f9fc;*/
+    background-color: #4a569a;
+    color: #333333;
 }
