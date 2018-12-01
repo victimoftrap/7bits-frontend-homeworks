@@ -6,13 +6,17 @@ body {
 
 .contact-us {
     margin: 0 auto;
-    width: 952px;
+    max-width: 952px;
+    width: 90%;
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    margin-bottom: 50px;
+    background-color: white;
 }
 
 .contact-us__content {
     margin: 0 auto;
-    width: 756px;
+    max-width: 756px;
+    width: 90%;
     padding-top: 80px;
     padding-bottom: 80px;
 }
@@ -39,24 +43,63 @@ body {
     float: left;
 }
 
+.contact-us__form {
+    max-width: 952px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .text-input__window {
-    width: 304px;
+    max-width: 304px;
+    width: 90%;
     height: 56px;
     border: 1px solid #f7f9fc;
     padding-left: 30px;
     padding-right: 30px;
-    /*background-color: #f7f9fc;*/
     background-color: #4a569a;
     color: #333333;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+#name {
+    float: left;
+}
+
+#email {
+    float: right;
 }
 
 #subject {
+    max-width: 694px;
+    width: 100%;
+    height: 56px;
+}
+
+#message {
+    max-width: 694px;
+    width: 100%;
+    height: 120px;
+    padding-top: 26px;
+}
+
+/*#subject {
     width: 304px;
     height: 56px;
     border: 1px solid #f7f9fc;
     padding-left: 30px;
     padding-right: 30px;
-    /*background-color: #f7f9fc;*/
     background-color: #4a569a;
     color: #333333;
+}*/
+
+.button__text {
+    cursor: pointer;
+    width: 188px;
+    height: 52px;
+    border-width: 0;
+    border-radius: 3px;
+    color: #5c6bc0;
+    font-size: 17px;
+    background-color: white;
 }

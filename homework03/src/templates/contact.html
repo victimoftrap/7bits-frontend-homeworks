@@ -45,10 +45,18 @@
         </p>
         <form class="contact-us__form form" method="post">
             <div class="form__text-input text-input">
-                <input id="first-name" class="text-input__window" type="text" placeholder="Your Name">
-                <input id="email" class="text-input__window" type="email" placeholder="Email">
-                <input id="subject" class="text-input__window" type="text" placeholder="Subject">
-                <textarea id="message" class="text-input__window" placeholder="Your Message"></textarea>
+                <div class="text-input__wrapper">
+                    <input id="name" class="text-input__window" type="text" placeholder="Your Name">
+                </div>
+                <div class="text-input__wrapper">
+                    <input id="email" class="text-input__window" type="email" placeholder="Email">
+                </div>
+                <div class="text-input__wrapper">
+                    <input id="subject" class="text-input__window" type="text" placeholder="Subject">
+                </div>
+                <div class="text-input__wrapper">
+                    <textarea id="message" class="text-input__window" placeholder="Your Message"></textarea>
+                </div>
             </div>
             <div class="form__send-button button">
                 <button class="button__text">Send message</button>
@@ -61,7 +69,7 @@
     <div class="general-footer__title">Palo Alto</div>
     <ul class="general-footer__menu second_menu">
         <li class="second_menu__item">
-            <a class="second_menu__title">Home</a>
+            <a class="second_menu__title" href="index.html">Home</a>
         </li>
         <li class="second_menu__item">
             <a class="second_menu__title">About</a>
@@ -69,8 +77,8 @@
         <li class="second_menu__item">
             <a class="second_menu__title">Archive</a>
         </li>
-        <li class="second_menu__item">
-            <a class="second_menu__title">Contact</a>
+        <li class="second_menu__item_forbidden">
+            <a class="second_menu__title_forbidden">Contact</a>
         </li>
         <li class="second_menu__item">
             <a class="second_menu__title">
