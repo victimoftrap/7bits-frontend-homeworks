@@ -19,7 +19,7 @@ body {
     top: 0;
     max-width: 735px;
     width: 100%;
-    border-top: 3px solid #5c6bc0;
+    border-top: 5px solid #5c6bc0;
 }
 
 .general-header {
@@ -154,12 +154,28 @@ body {
     color: #bdbdbd;
 }
 
-.post__category {
+/*.post__category {
     position: absolute;
     right: -12px;
     margin-top: -60px;
 
     display: inline-block;
+    padding: 10px 12px 11px 10px;
+    background-color: #5c6bc0;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffffff;
+    transition: padding 0.3s ease-in-out;
+}*/
+
+.post__category {
+    float: right;
+    margin-right: -12px;
+    margin-top: 20px;
+}
+
+.category-block {
     padding: 10px 12px 11px 10px;
     background-color: #5c6bc0;
     text-transform: capitalize;
@@ -207,37 +223,33 @@ body {
     color: #333333;
 }*/
 
-/*.post__read-more {*/
+.post__read-more {
+    /*margin-left: -34px;*/
+}
+
 .button {
     position: absolute;
     margin-left: -34px;
     padding: 21px 33px 19px 34px;
+    /*float: left;*/
+    text-align: center;
+
     font-weight: bold;
     font-size: 21px;
     color: #5c6bc0;
     text-transform: uppercase;
 }
 
-.post__read-more:hover {
-/*.button:hover {*/
+.button:hover {
     border: 1px solid #f1f1f1;
     padding-top: 20px;
     padding-left: 33px;
 }
 
-.post__read-more:active {
-/*.button:active {*/
+.button:active {
     border: 1px solid #7c89cc;
     padding-top: 20px;
     padding-left: 33px;
-}
-
-.post__tags {
-    margin-top: 27px;
-    position: absolute;
-    right: 100px;
-    font-size: 14px;
-    list-style: none;
 }
 
 .post__header_photo {
@@ -247,6 +259,15 @@ body {
 
 .post__header_photo:hover {
     filter: brightness(80%);
+}
+
+.post__tags {
+    margin-top: 27px;
+    /*position: absolute;*/
+    /*right: 100px;*/
+    font-size: 14px;
+    list-style: none;
+    float: right;
 }
 
 .tags-list__tag {
@@ -367,7 +388,10 @@ body {
 }
 
 .general-footer__menu {
-    margin: 0 0 45px;
+    max-width: 756px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 45px;
     padding-top: 66px;
     padding-left: 0;
     list-style: none;
@@ -490,12 +514,12 @@ body {
     width: 100%;
 }
 
-.second-menu__search-button {
+.second_menu__search-button {
     margin-bottom: -10px;
     padding: 8px;
 }
 
-.second-menu__search-button:hover {
+.second_menu__search-button:hover {
     background-color: #5360ac;
 }
 
@@ -523,8 +547,23 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+    .general-header::before {
+        max-width: 480px;
+        width: 40%;
+    }
+
+    .menu__item, .menu__item_forbidden {
+        display: none;
+    }
+
     .feed__post {
         margin-bottom: 40px;
+    }
+
+    .post__category {
+        margin-right: 0;
+        margin-top: 0;
+        font-size: 18px;
     }
 
     .post__page {
@@ -549,10 +588,38 @@ body {
 
     .post__content-picture {
         float: none;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .post__tags {
+        float: left;
+        position: absolute;
+        margin-top: 70px;
+        padding: 0;
+    }
+
+    .tags-list__tag {
+        margin-left: 0;
+        margin-right: 13px;
+    }
+
+    .general-footer__menu {
+        max-width: 330px;
+        width: 90%;
+        margin: 0 auto 45px;
     }
 
     .second_menu__item {
-        margin-left: 21px;
+        margin-left: 10px;
+    }
+
+    .second_menu__title {
+        font-size: 16px;
+    }
+
+    .second_menu__search-button {
+        display: none;
     }
 
     .general-footer__credits {
@@ -564,5 +631,28 @@ body {
     .general-footer__info {
         max-width: 330px;
         width: 90%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .general-footer__menu {
+        max-width: 100px;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 40px;
+        padding-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .second_menu__item, .second_menu__item_forbidden {
+        padding-bottom: 10px;
+    }
+
+    .general-footer__credits, .general-footer__info {
+        max-width: 260px;
+        width: 90%;
+        margin: 0 auto;
+        line-height: 22px;
     }
 }
