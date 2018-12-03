@@ -35,14 +35,6 @@ body {
     border-bottom: 4px double #ededed;
 }
 
-/*.contact-us__message::after {
-    content: '';
-    width: 756px;
-    margin-top: 48px;
-    border-top: 2px solid #eeeeee;
-    float: left;
-}*/
-
 .contact-us__form {
     display: flex;
     flex-direction: column;
@@ -58,6 +50,7 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .text-input__window {
@@ -67,8 +60,8 @@ body {
     border: 1px solid #f7f9fc;
     padding-left: 30px;
     padding-right: 30px;
-    background-color: #4a569a;
-    color: #333333;
+    background-color: #f7f9fc;
+    color: #bdbdbd;
     font-size: 20px;
     font-family: 'Lato', sans-serif;
 }
@@ -96,33 +89,9 @@ body {
     padding-top: 26px;
 }
 
-/*#subject {
-    width: 304px;
-    height: 56px;
-    border: 1px solid #f7f9fc;
-    padding-left: 30px;
-    padding-right: 30px;
-    background-color: #4a569a;
-    color: #333333;
-}*/
-
-/*.button__text {
-    cursor: pointer;
-    width: 188px;
-    height: 52px;
-    border-width: 0;
-    border-radius: 3px;
-    color: #5c6bc0;
-    font-size: 17px;
-    background-color: white;
-}*/
-
 .form__send-button {
-    /*position: absolute;*/
-    /*width: 188px;*/
-    /*height: 52px;*/
     margin-left: -34px;
-    padding-top: 20px;
+    /*padding-top: 20px;*/
 }
 
 .button-act__text {
@@ -170,6 +139,15 @@ body {
 
     .text-input__wrapper {
         flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .text-input__window {
+        margin-bottom: 20px;
+    }
+
+    .form__send-button {
+        padding-top: 0;
     }
 }
 
