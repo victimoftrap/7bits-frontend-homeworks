@@ -212,12 +212,12 @@ body {
     padding-left: 33px;
 }
 
-.feed-post__header_photo {
+.feed-post__header-photo {
     max-width: 952px;
     width: 100%;
 }
 
-.feed-post__header_photo:hover {
+.feed-post__header-photo:hover {
     filter: brightness(80%);
 }
 
@@ -498,6 +498,18 @@ body {
         margin-right: 0;
         margin-top: 0;
         font-size: 18px;
+        z-index: 2;
+        position: absolute;
+        right: 0;
+    }
+
+    .category-block_in-photo {
+        margin-top: -251px;
+    }
+
+    .feed-post__header-photo {
+        z-index: 1;
+        position: relative;
     }
 
     .feed-post__page {
