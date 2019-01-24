@@ -1,0 +1,21 @@
+{
+  "name": "homework04",
+  "version": "1.0.0",
+  "description": "Component-based homework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexander Golovanov",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.4.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-handlebars": "^5.0.2"
+  }
+}
