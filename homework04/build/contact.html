@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Palo Alto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./main.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet">
 </head>
@@ -24,7 +25,7 @@
             <a class="menu__title" href="./contact.html">Contact</a>
         </li>
         <li class="menu__item">
-            <a class="menu__title">
+            <a class="menu__title" href="#">
                 <div class="menu__search-button"></div>
             </a>
         </li>
@@ -43,20 +44,18 @@
             <form class="contact-us__form form" method="post">
                 <div class="form__text-field text-field">
                     <div class="text-field__wrapper">
-                        <input id="name" class="text-field__input" type="text" placeholder="Your Name">
-                        <!--</div>-->
-                        <!--<div class="text-input__wrapper">-->
-                        <input id="email" class="text-field__input" type="email" placeholder="Email">
+                        <input id="name" class="text-field__input" type="text" placeholder="Your Name" tabindex="1">
+                        <input id="email" class="text-field__input" type="email" placeholder="Email" tabindex="2">
                     </div>
                     <div class="text-field__wrapper">
-                        <input id="subject" class="text-field__input" type="text" placeholder="Subject">
+                        <input id="subject" class="text-field__input" type="text" placeholder="Subject" tabindex="3">
                     </div>
                     <div class="text-field__wrapper">
-                        <textarea id="message" class="text-field__input" placeholder="Your Message"></textarea>
+                        <textarea id="message" class="text-field__input" placeholder="Your Message" tabindex="4"></textarea>
                     </div>
                 </div>
                 <div class="form__send-button button-act">
-                    <button class="button-act__text">Send message</button>
+                    <button class="button-act__text" tabindex="5">Send message</button>
                 </div>
             </form>
         </article>
@@ -65,31 +64,32 @@
 <footer class="general-footer">
     <div class="general-footer__title">Palo Alto</div>
     <ul class="general-footer__menu second-menu">
-        <li class="second-menu__item_forbidden">
-            <a class="second-menu__title_forbidden">Home</a>
+        <li class="second-menu__item">
+            <a class="second-menu__title" href="./index.html">Home</a>
         </li>
         <li class="second-menu__item">
-            <a class="second-menu__title">About</a>
+            <a class="second-menu__title" href="#">About</a>
         </li>
         <li class="second-menu__item">
-            <a class="second-menu__title">Archive</a>
+            <a class="second-menu__title" href="#">Archive</a>
         </li>
         <li class="second-menu__item">
             <a class="second-menu__title" href="./contact.html">Contact</a>
         </li>
         <li class="second-menu__item">
-            <a class="second-menu__title">
+            <a class="second-menu__title" href="#">
                 <img class="second-menu__search-button" src="./images/search_footer.svg" alt="search"/>
             </a>
         </li>
     </ul>
-    <p class="general-footer__credits">Nunc placerat dolor at lectus hendrerit dignissim.
+    <p class="general-footer__credits">
+        Nunc placerat dolor at lectus hendrerit dignissim.
         Ut tortor sem, consectetur nec hendrerit ut, ullamcorper ac odio.
         Donec viverra ligula at quam tincidunt imperdiet.
         Nulla mattis tincidunt auctor.
     </p>
     <div class="general-footer__info">© 2015 - Palo Alto. All Rights Reserved. Designed & Developed by
-        <a class="general-footer__made-by">PixelBuddha Team</a>
+        <a class="general-footer__made-by" href="№">PixelBuddha Team</a>
     </div>
     <ul class="general-footer__social social">
         <li class="social__item">
