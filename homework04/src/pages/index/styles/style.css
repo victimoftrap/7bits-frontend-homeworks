@@ -2,15 +2,11 @@
     margin: 0 auto;
     max-width: 952px;
     width: 90%;
+    font-family: 'Lato', sans-serif;
 }
 
 .feed {
-    margin: 0;
     padding: 0;
-    max-width: 952px;
-    width: 100%;
-    list-style: none;
-    font-family: 'Lato', sans-serif;
     position: relative;
 }
 
@@ -60,12 +56,17 @@
     transition: padding 0.3s ease-in-out;
 }
 
-.feed-post__category:hover {
+.category-block__link-to {
+    color: white;
+    text-decoration: none;
+}
+
+.category-block:hover {
     padding: 12px 17px 13px 15px;
     background-color: #6b79c6;
 }
 
-.feed-post__category:active {
+.category-block:active {
     padding: 12px 17px 13px 15px;
     background-color: #5360ad;
 }
