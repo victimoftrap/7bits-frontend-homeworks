@@ -143,16 +143,6 @@
         width: 68%;
     }
 
-    .general-footer__menu {
-        max-width: 100px;
-        width: 90%;
-        margin: 0 auto;
-        padding-top: 40px;
-        padding-bottom: 30px;
-        display: flex;
-        flex-direction: column;
-    }
-
     .menu {
         background-image: url("../images/burger320.svg");
         width: 33px;
