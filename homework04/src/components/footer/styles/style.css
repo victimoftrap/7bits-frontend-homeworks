@@ -20,14 +20,11 @@
     margin: 0 auto 45px;
     padding-top: 66px;
     padding-left: 0;
-    list-style: none;
 }
 
 .second-menu {
     list-style: none;
-    height: 30px;
-    max-width: 400px;
-    width: 90%;
+    max-width: 420px;
 
     display: flex;
     justify-content: space-between;
@@ -36,7 +33,6 @@
 }
 
 .second-menu__item {
-    display: inline-block;
     position: relative;
 }
 
@@ -84,7 +80,6 @@
 }
 
 .second-menu__item_forbidden {
-    display: inline-block;
     text-transform: uppercase;
     color: white;
     margin-left: 22px;
@@ -105,10 +100,10 @@
     max-width: 756px;
     width: 90%;
     margin: 0 auto;
-    font-size: 13px;
-    position: relative;
     padding-top: 40px;
     padding-bottom: 40px;
+    position: relative;
+    font-size: 13px;
     border-top: 2px solid #5765b5;
 }
 
@@ -118,7 +113,6 @@
     width: 90%;
     position: absolute;
     bottom: 15px;
-    /*right: 9%;*/
     right: 40px;
     border-bottom: 2px solid #5765b5;
 }
@@ -171,7 +165,6 @@
 }
 
 .social__item {
-    display: inline-block;
     height: 30px;
     width: 37px;
     padding-top: 7px;
@@ -182,17 +175,9 @@
 }
 
 @media screen and (max-width: 480px) {
-    .general-footer__menu {
-        max-width: 350px;
-        width: 90%;
-        margin: 0 auto 45px;
-    }
-
     .second-menu {
         max-width: 350px;
-        width: 95%;
         justify-content: space-evenly;
-        align-content: center;
     }
 
     .second-menu__search-button {

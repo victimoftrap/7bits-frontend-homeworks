@@ -170,7 +170,7 @@
 
     .contact-us__message {
         font-size: 16px;
-        padding-bottom: 10px;
+        padding-bottom: 40px;
     }
 
     .contact-us__form {
@@ -183,7 +183,7 @@
         width: 100%;
     }
 
-    .text-field {
+    .form__text-field {
         max-width: 230px;
         width: 90%;
     }

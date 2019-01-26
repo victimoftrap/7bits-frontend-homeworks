@@ -1,24 +1,21 @@
 .general-header {
-    margin: 0 auto;
+    margin: 80px auto 0;
     max-width: 952px;
     width: 90%;
+
+    height: 110px;
+    font-family: 'Lato', sans-serif;
 }
 
 .general-header::before {
     content: '';
+    max-width: 735px;
+    width: 90%;
     display: block;
     position: absolute;
     left: 0;
     top: 0;
-    max-width: 735px;
-    width: 90%;
     border-top: 5px solid #5c6bc0;
-}
-
-.general-header {
-    height: 110px;
-    margin-top: 80px;
-    font-family: 'Lato', sans-serif;
 }
 
 .general-header__logo {
@@ -56,7 +53,6 @@
 }
 
 .menu__item {
-    display: inline-block;
     position: relative;
 }
 
@@ -97,11 +93,10 @@
 }
 
 .menu__item_forbidden {
-    display: inline-block;
+    position: relative;
     padding-left: 42px;
     font-size: 16px;
     text-transform: uppercase;
-    position: relative;
 }
 
 .menu__title_forbidden {
