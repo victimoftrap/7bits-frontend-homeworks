@@ -82,9 +82,12 @@
 }
 
 /*Read More button*/
-.button {
+.feed-post__read-more {
     position: absolute;
     margin-left: -34px;
+}
+
+.button {
     padding: 21px 33px 19px 34px;
     text-align: center;
 
@@ -92,6 +95,7 @@
     font-size: 21px;
     color: #5c6bc0;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .button:hover {
@@ -241,7 +245,7 @@
     }
 
     .category-block_in-photo {
-        margin-top: -251px;
+        margin-top: -290px;
     }
 
     .feed-post__header-photo {
@@ -252,7 +256,7 @@
     .feed-post__page {
         max-width: 450px;
         width: 80%;
-        padding-bottom: 140px;
+        padding-bottom: 160px;
     }
 
     .feed-post__title {
@@ -277,7 +281,7 @@
     }
 
     .feed-post__hashtags {
-        margin-top: 67px;
+        margin-top: 77px;
         margin-left: -10px;
         padding: 0;
 
@@ -295,8 +299,32 @@
         margin-bottom: 20px;
     }
 
+    .category-block_in-photo {
+        margin-top: -195px;
+    }
+
     .feed-post__date {
         padding-top: 50px;
+    }
+
+    .feed-post__read-more {
+        margin-left: -12px;
+    }
+
+    .button {
+        padding: 21px 12px 19px 11px;
+    }
+
+    .button:hover {
+        border: 1px solid #f1f1f1;
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+
+    .button:active {
+        border: 1px solid #7c89cc;
+        padding-top: 20px;
+        padding-left: 10px;
     }
 
     .hashtags__link-to {

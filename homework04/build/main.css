@@ -118,7 +118,8 @@
     width: 90%;
     position: absolute;
     bottom: 15px;
-    right: 9%;
+    /*right: 9%;*/
+    right: 40px;
     border-bottom: 2px solid #5765b5;
 }
 
@@ -204,6 +205,12 @@
         line-height: 20px;
     }
 
+    .general-footer__credits::after {
+        max-width: 340px;
+        width: 90%;
+        left: 15px;
+    }
+
     .general-footer__info {
         max-width: 350px;
         width: 90%;
@@ -247,6 +254,12 @@
         width: 90%;
         margin: 0 auto;
         line-height: 22px;
+    }
+
+    .general-footer__credits::after {
+        max-width: 260px;
+        width: 100%;
+        left: 0;
     }
 
     .general-footer__info {
@@ -419,11 +432,16 @@
         margin: 2px 0 0;
     }
 }
+body {
+    margin: 0;
+    background-color: #f7f9fc;
+    font-family: 'Lato', sans-serif;
+}
 .contact-us {
     max-width: 952px;
     width: 90%;
-    box-shadow: 0 0 20px rgba(0,0,0,0.2);
     margin: 0 auto 50px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
     background-color: white;
 }
 
@@ -433,11 +451,13 @@
     width: 90%;
     padding-top: 80px;
     padding-bottom: 40px;
+    font-family: 'Lato', sans-serif;
 }
 
 .contact-us__title {
     margin: 0;
     font-size: 40px;
+    font-weight: 700;
     text-transform: capitalize;
 }
 
@@ -447,37 +467,41 @@
     padding-bottom: 50px;
     font-size: 17px;
     color: #333333;
-    border-bottom: 4px double #ededed;
+    border-bottom: 2px solid #ededed;
 }
 
 .contact-us__form {
-    display: flex;
-    flex-direction: column;
-    padding-top: 46px;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*padding-top: 46px;*/
     max-width: 952px;
     width: 100%;
     margin: 0 auto;
+
+    padding-top: 46px;
 }
 
 .text-field__wrapper {
     max-width: 796px;
     width: 100%;
+    margin: 0 auto 20px;
+
     display: flex;
     justify-content: space-between;
-    margin: 0 auto 20px;
+    flex-wrap: wrap;
 }
 
 .text-field__input {
     max-width: 304px;
     width: 80%;
     height: 56px;
+
     border: 1px solid #f7f9fc;
     padding-left: 30px;
     padding-right: 30px;
     background-color: #f7f9fc;
     color: #bdbdbd;
     font-size: 20px;
-    font-family: 'Lato', sans-serif;
 }
 
 #name {
@@ -504,8 +528,9 @@
 }
 
 .form__send-button {
-    margin-left: -34px;
+    /*margin-left: -34px;*/
     /*padding-top: 20px;*/
+    margin-left: -5%;
 }
 
 .button-act__text {
@@ -562,6 +587,7 @@
 
     .form__send-button {
         padding-top: 0;
+        margin-left: -12%;
     }
 }
 
@@ -603,7 +629,8 @@
 
     .form__send-button {
         max-width: 280px;
-        margin-left: -14px;
+        margin-left: -8%;
+        /*margin-left: -14px;*/
     }
 
     .button-act__text {
@@ -621,11 +648,6 @@
         padding-left: 15px;
         padding-right: 14px;
     }
-}
-body {
-    margin: 0;
-    background-color: #f7f9fc;
-    font-family: 'Lato', sans-serif;
 }
 .main {
     margin: 0 auto;
@@ -711,9 +733,12 @@ body {
 }
 
 /*Read More button*/
-.button {
+.feed-post__read-more {
     position: absolute;
     margin-left: -34px;
+}
+
+.button {
     padding: 21px 33px 19px 34px;
     text-align: center;
 
@@ -721,6 +746,7 @@ body {
     font-size: 21px;
     color: #5c6bc0;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .button:hover {
@@ -870,7 +896,7 @@ body {
     }
 
     .category-block_in-photo {
-        margin-top: -251px;
+        margin-top: -290px;
     }
 
     .feed-post__header-photo {
@@ -881,7 +907,7 @@ body {
     .feed-post__page {
         max-width: 450px;
         width: 80%;
-        padding-bottom: 140px;
+        padding-bottom: 160px;
     }
 
     .feed-post__title {
@@ -906,7 +932,7 @@ body {
     }
 
     .feed-post__hashtags {
-        margin-top: 67px;
+        margin-top: 77px;
         margin-left: -10px;
         padding: 0;
 
@@ -924,8 +950,32 @@ body {
         margin-bottom: 20px;
     }
 
+    .category-block_in-photo {
+        margin-top: -195px;
+    }
+
     .feed-post__date {
         padding-top: 50px;
+    }
+
+    .feed-post__read-more {
+        margin-left: -12px;
+    }
+
+    .button {
+        padding: 21px 12px 19px 11px;
+    }
+
+    .button:hover {
+        border: 1px solid #f1f1f1;
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+
+    .button:active {
+        border: 1px solid #7c89cc;
+        padding-top: 20px;
+        padding-left: 10px;
     }
 
     .hashtags__link-to {

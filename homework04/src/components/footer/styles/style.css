@@ -118,7 +118,8 @@
     width: 90%;
     position: absolute;
     bottom: 15px;
-    right: 9%;
+    /*right: 9%;*/
+    right: 40px;
     border-bottom: 2px solid #5765b5;
 }
 
@@ -204,6 +205,12 @@
         line-height: 20px;
     }
 
+    .general-footer__credits::after {
+        max-width: 340px;
+        width: 90%;
+        left: 15px;
+    }
+
     .general-footer__info {
         max-width: 350px;
         width: 90%;
@@ -247,6 +254,12 @@
         width: 90%;
         margin: 0 auto;
         line-height: 22px;
+    }
+
+    .general-footer__credits::after {
+        max-width: 260px;
+        width: 100%;
+        left: 0;
     }
 
     .general-footer__info {
