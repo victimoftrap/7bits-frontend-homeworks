@@ -14,7 +14,7 @@ var path = {
     images:'./src/**/images/*',
     build: {
         root: './build/**',
-        css: './build',
+        css: './build/styles',
         html: './build',
         images: './build/images'
     }
