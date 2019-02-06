@@ -4,6 +4,14 @@ var handlebars = require('gulp-compile-handlebars');
 var rename = require('gulp-rename');
 var browserSync = require('browser-sync').create();
 
+// var cssmin = require('gulp-cssmin');
+// var autoprefixer = require('gulp-autoprefixer');
+
+var cssnano = require('gulp-cssnano');
+var postcss = require('gulp-postcss');
+var autoprefixer = require('autoprefixer');
+var sourcemaps = require('gulp-sourcemaps');
+
 var path = {
     css: './src/**/*.css',
     html: {
@@ -37,7 +45,11 @@ gulp.task('html', function () {
 
 gulp.task('css', function () {
     return gulp.src(path.css)
+        .pipe(sourcemaps.init())
+        .pipe(postcss([autoprefixer()])) // .pipe(autoprefixer())
         .pipe(concat('main.css'))
+        .pipe(cssnano()) // .pipe(cssmin())
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(path.build.css));
 });
 
