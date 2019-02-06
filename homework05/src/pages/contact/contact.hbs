@@ -1,0 +1,34 @@
+{{#> layout/layout}}
+    <meta name="keywords" content="Palo Alto, contacts blog"/>
+    <meta name="description" content="Palo Alto blog. Send message to us."/>
+
+    <main class="contact-us">
+        <article class="contact-us__content">
+            <h1 class="contact-us__title">Contact us</h1>
+            <p class="contact-us__message">
+                Nam in maximus arcu, ac aliquam tellus. Donec vestibulum ipsum nunc, at placerat ante posuere non.
+                Integer at dui a lacus suscipit elementum id non massa.
+                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                Nunc eu neque eros. Ut eu quam justo.
+            </p>
+            <form class="contact-us__form form" method="post">
+                <div class="form__text-field">
+                    <div class="text-field__wrapper">
+                        <input id="name" class="text-field__input" type="text" placeholder="Your Name" tabindex="1">
+                        <input id="email" class="text-field__input" type="email" placeholder="Email" tabindex="2">
+                    </div>
+                    <div class="text-field__wrapper">
+                        <input id="subject" class="text-field__input" type="text" placeholder="Subject" tabindex="3">
+                    </div>
+                    <div class="text-field__wrapper">
+                        <textarea id="message" class="text-field__input" placeholder="Your Message"
+                                  tabindex="4"></textarea>
+                    </div>
+                </div>
+                <div class="form__send-button button-act">
+                    <button class="button-act__text" tabindex="5">Send message</button>
+                </div>
+            </form>
+        </article>
+    </main>
+{{/ layout/layout}}

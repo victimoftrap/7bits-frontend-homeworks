@@ -1,0 +1,21 @@
+{
+  "name": "homework05",
+  "version": "1.0.0",
+  "description": "Best-practice part of homework",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexander Golovanov",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.4.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-handlebars": "^5.0.2"
+  }
+}
